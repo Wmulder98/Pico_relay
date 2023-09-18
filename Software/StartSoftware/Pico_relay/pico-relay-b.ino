@@ -5,17 +5,21 @@
 //Creater:                    Wouter Mulder 
 //Proccesor:                  RP2040
 //Proccesor datasheet:        https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf
+#include "global.h"
 
-#define RELAYCH1    21
-#define RELAYCH2    20
-#define RELAYCH3    19
-#define RELAYCH4    18
-#define RELAYCH5    17
-#define RELAYCH6    16
-#define RELAYCH7    15
-#define RELAYCH8    14
+void setupPicoRelayB(void)
+{
+  pinMode(RELAYCH1, OUTPUT);
+  pinMode(RELAYCH2, OUTPUT);
+  pinMode(RELAYCH3, OUTPUT);
+  pinMode(RELAYCH4, OUTPUT);
+  pinMode(RELAYCH5, OUTPUT);
+  pinMode(RELAYCH6, OUTPUT);
+  pinMode(RELAYCH7, OUTPUT);
+  pinMode(RELAYCH8, OUTPUT);
 
-#define LEDCONTROL  13
-#define NUMOFLEDS   1
-#define BUZZER      6
+  pinMode(BUZZER, OUTPUT);
+}
+
+
 
